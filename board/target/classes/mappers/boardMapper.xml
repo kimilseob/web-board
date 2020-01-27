@@ -8,7 +8,7 @@
 	
 	<select id="list" resultType="com.board.domain.BoardVO">
 		select
-			bno,title,cotent , writer , regDate , viewCnt
+			bno,title,content , writer , regDate , vieCnt
 			
 		from tbl_board	
 	</select>
