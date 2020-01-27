@@ -21,4 +21,29 @@ public class BoardServiceImpl implements BoardService {
 		return dao.list();
 		
 	}
+
+	@Override
+	public void write(BoardVO vo) throws Exception {
+		// TODO Auto-generated method stub
+		
+		dao.write(vo);
+	}
+
+	@Override
+	public BoardVO view(int bno) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.view(bno);
+	}
+
+	@Override
+	public void modify(BoardVO vo) throws Exception {
+		// TODO Auto-generated method stub
+		dao.modify(vo);
+	}
+	
+	@Override
+	// 게시물 삭제
+	public void delete(int bno) throws Exception {
+	 dao.delete(bno);
+	}
 }
